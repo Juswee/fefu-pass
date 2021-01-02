@@ -267,7 +267,7 @@
     font-family: 'Roboto', sans-serif;
     letter-spacing: -.5px;
     font-stretch: condensed;
-    filter: blur(1px);
+    filter: blur(.4px);
     color: rgba(255, 255, 255, .8);
 }
 .abs#house { 
