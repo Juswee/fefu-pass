@@ -15,7 +15,7 @@
 
 .spoiler-body {
     display: none;
-    height: 222px;
+    height: 230px;
     overflow-y: auto;
 }
 
@@ -102,7 +102,7 @@
 }
 
 #body-pass {
-    margin: 8px;   
+    margin: 0 8px;   
     margin-bottom: 0;
     position: relative;
     width: 300px;
@@ -163,7 +163,7 @@
     margin: 0;
     position: absolute;
     right: 0;
-    top: -5px;
+    top: -2px;
     opacity: .7;
     color: #fff;
     transition: .3s;
@@ -177,7 +177,7 @@
 #content { 
     position: relative;
     width: auto;
-    height: 255px;
+    height: 263px;
     border-radius: 10px;
     background: #807881;
     overflow: hidden;
@@ -219,7 +219,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    max-height: 222px;
+    max-height: 230px;
     overflow-y: auto;
 }
 .passlist_item {
