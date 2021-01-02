@@ -165,11 +165,11 @@
     transform: rotate(180deg);
 }
 #fefu-sett.active {
-    transform: rotate(45deg);
+    width: 0;
 }
 #fefu-sett.active::before {
     transform: rotate(45deg);
-    top: 4px;
+    top: 0px;
 }
 #fefu-sett.active::after {
     transform: rotate(-45deg);
