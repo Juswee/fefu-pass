@@ -233,6 +233,28 @@
     color: #333;
     font-size: 16px;
 }
+.passlist_item::before, 
+.passlist_item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: rotate(45deg) translateY(-50%);
+    height: 2px;
+    width: 10px;
+    background: #fff;
+    opacity: .4;
+}
+.passlist_item::after {
+    right: 11px;
+    transform: rotate(-45deg);   
+}
+.passlist_item.active::before, 
+.passlist_item.active::after {
+    opacity: .95;
+    background: red;
+}
 .radio {
     position: absolute;
     left: 10px;
