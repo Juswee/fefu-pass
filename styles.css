@@ -221,7 +221,7 @@
     max-height: 233px;
     overflow-y: auto;
 }
-.passlist_item {
+.passlist-item {
     margin: 5px auto;
     padding-top: 4px;
     position: relative;
@@ -233,8 +233,8 @@
     color: #333;
     font-size: 16px;
 }
-.passlist_item::before, 
-.passlist_item::after {
+.passlist-item::before, 
+.passlist-item::after {
     content: "";
     display: block;
     position: absolute;
@@ -246,12 +246,12 @@
     background: #fff;
     opacity: .4;
 }
-.passlist_item::after {
+.passlist-item::after {
     right: 11px;
     transform: rotate(-45deg);   
 }
-.passlist_item.active::before, 
-.passlist_item.active::after {
+.passlist-item.active::before, 
+.passlist-item.active::after {
     opacity: .95;
     background: red;
 }
