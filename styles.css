@@ -215,20 +215,18 @@
 /* Passlist */
 #passlist-title {
     margin: 0;
-    position: fixed;
-    top: 0;
+    position: relative;
     font-size: 20px;
     font-family: sans-serif;
     text-align: center;
 }
 
 #passlist {
-    pading-top: 33px;
     position: relative;
     display: flex;
     flex-direction: column;
     height: auto;
-    max-height: 224px;
+    max-height: 189px;
     overflow-y: auto;
 }
 
