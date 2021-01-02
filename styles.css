@@ -175,6 +175,7 @@
     transform: rotate(180deg);
 }
 #fefu-sett.active span {
+    width: 0;
     background: transparent;
 }
 #fefu-sett.active::before,
