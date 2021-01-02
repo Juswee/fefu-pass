@@ -1,7 +1,6 @@
 .flexbox {
     display: flex;
 }
-
 .flexbox.column {
     flex-direction: column;
 }
@@ -20,7 +19,6 @@
 
     border-radius: 7px;
     background: #333;
-    
     z-index: 10000;
 }
 
@@ -36,7 +34,6 @@
     max-height: 98vh;
     
     background: #333;
-
     overflow: hidden;
 }
 
@@ -51,13 +48,11 @@
     font: 25px cursive;
     text-align: center;
     color: aliceblue;
-    
     background: #333;
 }
 
 #fefu-pass p {
     margin: 0;
-    
     cursor: default;
 }
 
@@ -65,12 +60,9 @@
     margin: 0;
     position: absolute;
     left: 0;
-    
     color: rgba(255, 255, 255, .7);
-
     transition: .3s;
 }
-
 #fefu-sett::before, 
 #fefu-sett::after {
     content: "";
@@ -78,20 +70,15 @@
     position: absolute;
     left: 0;
     top: 0;
-
     background-color: rgba(255, 255, 255, .7);
-
     transition: .3s;
 }
-
 #fefu-sett::before {
     top: -5px;
 }
-
 #fefu-sett::after {
     top: 5px;
 }
-
 #fefu-sett:hover, 
 #fefu-sett::before:hover, 
 #fefu-sett::after:hover {
@@ -103,13 +90,10 @@
     position: absolute;
     right: 0;
     top: -5px;
-
     opacity: .7;
     color: #fff;
-
     transition: .3s;
 }
-
 #fefu-close:hover {
     opacity: 1;
     color: red;
@@ -123,7 +107,6 @@
     
     border-radius: 10px;
     background: #807881;
-    
     overflow: hidden;
 }
 
@@ -177,11 +160,8 @@
     transform: rotate(45deg);
 }
 
-
 /* Form */
 #form-pass {
-/*    padding: 10px 0;*/
-/*    padding-bottom: 10px;*/
     display: flex;
     flex-direction: column;
 }
@@ -199,7 +179,7 @@
 #save-btn {
     margin: 7px auto;
     height: 35px;
-    font-size: 13px;
+    font-size: 15px;
     background: #4169E1;
     border-radius: 4px;
     outline: none;
@@ -219,10 +199,6 @@
     
     height: auto;
     max-height: 100%;
-    
-/*    border-radius: 10px;*/
-/*    background: rgba(255, 255, 255, .34);*/
-    
     overflow-y: auto;
 }
 
@@ -239,7 +215,6 @@
     
     border-radius: 5px;
     background: #fff;
-    
     cursor: pointer;
 }
 
@@ -248,24 +223,19 @@
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-
     height = 15px;
-    
     cursor: pointer;
 }
 
 .name { 
     display: flex;
-    
     width: 100%;
     height: 35px;
-    
     overflow: auto;
 }
 
 .name p {
     margin: auto;
-    
     text-align: center;
     font: 20px sans-serif;
 }
@@ -275,9 +245,6 @@
     color: #f38181;
     text-align: center;
 }
-
-
-
 
 .abs#name {
     margin: 0 15px;
