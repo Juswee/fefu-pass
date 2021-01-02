@@ -263,11 +263,11 @@
     
     line-height: 1.1;
     text-align: left;
-    font-size: 23px;
+    font-size: 15px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: -.5px;
     font-stretch: condensed;
-    
+    filter: blur(2px);
     color: rgba(255, 255, 255, .8);
 }
 .abs#house { 
@@ -278,10 +278,10 @@
     
     line-height: 1;
     text-align: left;
-    font-size: 15px;
+    font-size: 7.5px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0px;
     font-stretch: condensed;
-    
+    filter: blur(2px);
     color: rgba(255, 255, 255, .7);
 }
