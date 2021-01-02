@@ -23,7 +23,7 @@
     margin: 0;
     padding: 5px 0;
     position: relative;
-    font-size: 20px;
+    font-size: 17px;
     font-family: sans-serif;
     text-align: center;
     cursor: pointer;
@@ -193,23 +193,23 @@
 
 .input-crt {
     margin: 4px auto;
-    padding: 3px 10px 0 0;
+    padding: 7px 10px 3px 0;
     width: 70%;
     border-radius: 3px;
     border: 1px solid #797387;
     outline: none;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 #save-btn {
     margin: 7px auto;
-    height: 35px;
+    height: 40px;
     font-size: 15px;
     background: #4169E1;
     border-radius: 4px;
     outline: none;
     border: 1px solid rgba(3, 3, 3, .3);
-    font-size: 16px;
+    font-size: 17px;
 }
 
 /* Passlist */
