@@ -193,12 +193,13 @@
     border-radius: 3px;
     border: 1px solid #797387;
     outline: none;
+    font-size: 13px;
 }
 
 #save-btn {
     margin: 7px auto;
-    width: 40%;
     height: 35px;
+    font-size: 13px;
     background: #4169E1;
     border-radius: 4px;
     outline: none;
