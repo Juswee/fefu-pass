@@ -131,9 +131,9 @@
 }
 /* Settings */
 #fefu-menu {
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     content-spacing: 5px;
     position: absolute;
     left: 0;
@@ -146,6 +146,13 @@
 }
 #fefu-menu.active {
     top: 0;
+}
+.title { 
+    margin-bottom: 30px;
+    padding: 3px 0;
+    font-size: 22px;
+    font-family: cursive;
+    text-align: center;
 }
 #fefu-menu nav {
     color: #fff;   
