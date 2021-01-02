@@ -215,6 +215,7 @@
 /* Passlist */
 #passlist {
     margin: 0;
+    margin-top: 7px;
     position: relative;
     display: flex;
     flex-direction: column;
