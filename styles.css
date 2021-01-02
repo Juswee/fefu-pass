@@ -224,10 +224,8 @@
 }
 .passlist_item {
     margin: 5px auto;
+    padding-top: 4px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
     width: 90%;
     height: 35px;
     border-radius: 5px;
