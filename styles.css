@@ -5,6 +5,15 @@
     flex-direction: column;
 }
 
+#img-pass {
+    margin = 0;
+    position = absolute;
+    left = 15px;
+    bottom = 0;
+    width = calc(100% - 30px);
+    height = auto;   
+}
+
 #html-pass {
     display: block;
     position: absolute;
