@@ -166,7 +166,7 @@
     transform: rotate(180deg);
 }
 #fefu-sett.active {
-    height: 0;
+    background: transparent;
 }
 #fefu-sett.active::before {
     transform: rotate(-45deg);
