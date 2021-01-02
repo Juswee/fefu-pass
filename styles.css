@@ -191,7 +191,7 @@
 }
 
 .input-crt {
-    margin: 4px auto;
+    margin: 5px auto;
     padding: 7px 10px 3px 10px;
     width: 70%;
     border-radius: 3px;
@@ -201,7 +201,7 @@
 }
 
 #save-btn {
-    margin: 7px auto;
+    margin: 15px auto;
     height: 40px;
     font-size: 15px;
     background: #4169E1;
