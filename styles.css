@@ -216,12 +216,14 @@
 #passlist-title {
     margin: 0;
     position: fixed;
+    top: 0;
     font-size: 20px;
     font-family: sans-serif;
     text-align: center;
 }
 
 #passlist {
+    pading-top: 33px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -231,7 +233,7 @@
 }
 
 .passlist_item {
-    margin: 10px auto;
+    margin: 5px auto;
     position: relative;
     display: flex;
     justify-content: center;
