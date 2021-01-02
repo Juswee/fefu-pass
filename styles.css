@@ -129,33 +129,28 @@
     cursor: default;
 }
 
-#fefu-sett {
-    margin: 0;
-    position: absolute;
-    left: 0;
-    color: rgba(255, 255, 255, .7);
-    transition: .3s;
-}
+#fefu-sett,
 #fefu-sett::before, 
 #fefu-sett::after {
     content: "";
     display: block;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 4px;
     background-color: rgba(255, 255, 255, .7);
-    transition: .3s;
+    transition: .6s;
 }
 #fefu-sett::before {
-    top: -5px;
+    top: 6px;
 }
 #fefu-sett::after {
-    top: 5px;
+    top: 10px;
 }
 #fefu-sett:hover, 
 #fefu-sett::before:hover, 
 #fefu-sett::after:hover {
-    
+    transform: rotate(-20deg);
+    transform: rotate(180deg);
 }
 
 #fefu-close {
