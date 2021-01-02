@@ -271,6 +271,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 233px;
     max-height: 233px;
     overflow-y: auto;
 }
