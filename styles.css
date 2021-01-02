@@ -15,7 +15,7 @@
 
 .spoiler-body {
     display: none;
-    height: 233px;
+    height: 230px;
     overflow-y: auto;
 }
 
@@ -271,8 +271,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 233px;
-    max-height: 233px;
+    height: 230px;
+    max-height: 230px;
     overflow-y: auto;
 }
 .passlist-item {
