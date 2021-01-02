@@ -213,7 +213,7 @@
 }
 
 /* Passlist */
-#passlist-title {
+#passlist {
     margin: 0;
     position: relative;
     font-size: 20px;
@@ -221,7 +221,7 @@
     text-align: center;
 }
 
-#passlist {
+#passlist-inner {
     position: relative;
     display: flex;
     flex-direction: column;
