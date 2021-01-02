@@ -216,20 +216,11 @@
 #passlist {
     margin: 0;
     position: relative;
-    font-size: 20px;
-    font-family: sans-serif;
-    text-align: center;
-}
-
-#passlist-inner {
-    position: relative;
     display: flex;
     flex-direction: column;
-    height: auto;
-    max-height: 189px;
+    max-height: 222px;
     overflow-y: auto;
 }
-
 .passlist_item {
     margin: 5px auto;
     position: relative;
