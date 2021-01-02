@@ -176,29 +176,6 @@
     top: 6px;
 }
 
-#fefu-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    content-spacing: 5px;
-    position: absolute;
-    left: 0;
-    top: -100%;
-    width: 100%;
-    height: 100%;
-    font-size: 13x;
-    font-family: monospace;
-/*     background: #333; */
-    transition: .3s;
-    z-index: 10;
-}
-#fefu-menu.active {
-    top: 0;
-}
-.menu-item {
-    color: #fff;   
-}
-
 #fefu-close {
     margin: 0;
     position: absolute;
@@ -221,6 +198,29 @@
     border-radius: 10px;
     background: #807881;
     overflow: hidden;
+}
+/* Menu */
+#fefu-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content-spacing: 5px;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    font-size: 13x;
+    font-family: monospace;
+    background: inherit;
+    transition: .3s;
+    z-index: 10;
+}
+#fefu-menu.active {
+    top: 0;
+}
+.menu-item {
+    color: #fff;   
 }
 
 /* Form */
