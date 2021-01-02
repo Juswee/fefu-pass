@@ -146,7 +146,7 @@
     position: absolute;
     left: 0;
     top: 10px;
-    width: 25px;
+    width: 22px;
     height: 2px;
     background: rgba(255, 255, 255, .7);
     transition: .6s;
@@ -168,11 +168,11 @@
     width: 0;
 }
 #fefu-sett.active::before {
-    transform: rotate(45deg);
-    top: 0px;
+    transform: rotate(-45deg);
 }
 #fefu-sett.active::after {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
+    top: 6px;
 }
 
 #fefu-menu {
