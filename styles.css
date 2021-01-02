@@ -255,33 +255,21 @@
     text-align: center;
 }
 
-.abs#name {
+.abs {
     margin: 0 15px;
     position: absolute;
-    left: 6%;
-    top: 30.5%;
-    
-    line-height: 1.1;
+    line-height: 1;
     text-align: left;
-    font-size: 13px;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: -.5px;
     font-stretch: condensed;
     filter: blur(.4px);
     color: rgba(255, 255, 255, .9);
 }
+.abs#name {
+    line-height: 1.1;
+    letter-spacing: -.5px;
+}
 .abs#house { 
-    margin: 0 15px;
-    position: absolute;
-    left: 6%;
-    bottom: 6%;
-    
-    line-height: 1;
-    text-align: left;
-    font-size: 8px;
-    font-family: 'Roboto', sans-serif;
     letter-spacing: 0px;
-    font-stretch: condensed;
-    filter: blur(.4px);
     color: rgba(255, 255, 255, .8);
 }
