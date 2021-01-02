@@ -181,10 +181,10 @@
 #fefu-sett.active::after {
     left: 10px;
     width: 12px;
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) translateY(-6px);
 }
 #fefu-sett.active::after {
-    transform: rotate(45deg);
+    transform: rotate(45deg) translateY(6px);
 }
 
 #fefu-close {
