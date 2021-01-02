@@ -123,6 +123,7 @@
     text-align: center;
     color: aliceblue;
     background: #333;
+    z-index: 11;
 }
 
 #fefu-pass p {
@@ -165,7 +166,7 @@
     transform: rotate(180deg);
 }
 #fefu-sett.active {
-    width: 0;
+    height: 0;
 }
 #fefu-sett.active::before {
     transform: rotate(-45deg);
@@ -185,11 +186,13 @@
     top: -100%;
     width: 100%;
     height: 100%;
-    background: #333;
+    font-size: 13x;
+    font-family: monospace;
+/*     background: #333; */
     transition: .3s;
     z-index: 10;
 }
-#fefu-sett.active > #fefu-menu {
+#fefu-menu.active {
     top: 0;
 }
 .menu-item {
