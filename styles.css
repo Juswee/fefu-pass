@@ -24,7 +24,7 @@
     padding: 5px 0;
     position: relative;
     font-size: 17px;
-    font-family: monospace;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     cursor: pointer;
     transition: .3s;
