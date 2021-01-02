@@ -241,10 +241,11 @@
     right: 7px;
     top: 50%;
     transform: rotate(45deg) translateY(-50%);
-    height: 2px;
+    height: 1px;
     width: 10px;
-    background: #fff;
-    opacity: .4;
+    background: #333;
+    opacity: .35;
+    transition: .3s;
 }
 .passlist-item::after {
     right: 11px;
