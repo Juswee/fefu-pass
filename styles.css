@@ -1,0 +1,310 @@
+.flexbox {
+    display: flex;
+}
+
+.flexbox.column {
+    flex-direction: column;
+}
+
+#html-pass {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 316px;
+    max-width: 100vw;
+    height: 316px;
+    max-height: 100vh;
+
+    border-radius: 7px;
+    background: #333;
+    
+    z-index: 10000;
+}
+
+#body-pass {
+    margin: 8px;   
+    margin-bottom: 0;
+    
+    position: relative;
+
+    width: 300px;
+    max-width: 98vw;
+    height: 308px;
+    max-height: 98vh;
+    
+    background: #333;
+
+    overflow: hidden;
+}
+
+#fefu-pass {
+    margin: 0;
+    
+    position: relative;
+    
+    height: 35px;
+    width: 100%;
+    
+    font: 25px cursive;
+    text-align: center;
+    color: aliceblue;
+    
+    background: #333;
+}
+
+#fefu-pass p {
+    margin: 0;
+    
+    cursor: default;
+}
+
+#fefu-sett {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    
+    color: rgba(255, 255, 255, .7);
+
+    transition: .3s;
+}
+
+#fefu-sett::before, 
+#fefu-sett::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: rgba(255, 255, 255, .7);
+
+    transition: .3s;
+}
+
+#fefu-sett::before {
+    top: -5px;
+}
+
+#fefu-sett::after {
+    top: 5px;
+}
+
+#fefu-sett:hover, 
+#fefu-sett::before:hover, 
+#fefu-sett::after:hover {
+    
+}
+
+#fefu-close {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: -5px;
+
+    opacity: .7;
+    color: #fff;
+
+    transition: .3s;
+}
+
+#fefu-close:hover {
+    opacity: 1;
+    color: red;
+}
+
+#content { 
+    position: relative;
+    
+    width: auto;
+    height: 255px;
+    
+    border-radius: 10px;
+    background: #807881;
+    
+    overflow: hidden;
+}
+
+.spoiler {
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    background: rgba(32,16,89, .6);
+}
+
+.spoiler-body {
+    display: none;
+}
+
+.spoiler-title {
+    margin: 0;
+    padding: 5px 0;
+    position: relative;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+/*    background: rgba(32,16,89, .6);*/
+    cursor: pointer;
+    transition: .3s;
+}
+.spoiler-title::before,
+.spoiler-title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    background: #fff;
+    top: 50%;
+    left: 5px;
+    transform: rotate(45deg);
+    transition: .3s;
+}
+.spoiler-title::after {
+    transform: rotate(-45deg);
+    left: 12px;
+}
+
+.spoiler-title.active {
+    margin: 0 0 8px 0;
+}
+.spoiler-title.active::before {
+    transform: rotate(-45deg);
+}
+.spoiler-title.active::after {
+    transform: rotate(45deg);
+}
+
+
+/* Form */
+#form-pass {
+/*    padding: 10px 0;*/
+/*    padding-bottom: 10px;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.input-crt {
+    margin: 2px auto;
+    padding:  0 10px;
+    width: 70%;
+    border-radius: 3px;
+    border: 1px solid #797387;
+    outline: none;
+}
+
+#save-btn {
+    margin: 7px auto;
+    width: 40%;
+    height: 35px;
+    background: #4169E1;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(3, 3, 3, .3);
+}
+
+/* Passlist */
+#passlist_title {
+    margin: 0; 
+    font: 14px sans-serif;
+    text-align: center;
+}
+
+#passlist {
+    display: flex;
+    flex-direction: column;
+    
+    height: auto;
+    max-height: 100%;
+    
+/*    border-radius: 10px;*/
+/*    background: rgba(255, 255, 255, .34);*/
+    
+    overflow-y: auto;
+}
+
+.passlist_item {
+    margin: 10px auto;
+    
+    position: relative;
+    display: flex;
+    justify-content: left;
+    vertical-align: middle;
+    
+    width: 90%;
+    height: 35px;
+    
+    border-radius: 5px;
+    background: #fff;
+    
+    cursor: pointer;
+}
+
+.radio {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height = 15px;
+    
+    cursor: pointer;
+}
+
+.name { 
+    display: flex;
+    
+    width: 100%;
+    height: 35px;
+    
+    overflow: auto;
+}
+
+.name p {
+    margin: auto;
+    
+    text-align: center;
+    font: 20px sans-serif;
+}
+#signature {
+    margin: 0;
+    font: 13px monospace;
+    color: #f38181;
+    text-align: center;
+}
+
+
+
+
+.abs#name {
+    margin: 0 15px;
+    position: absolute;
+    left: 6%;
+    bottom: 41%;
+    
+    line-height: 1.1;
+    text-align: left;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -.5px;
+    font-stretch: condensed;
+    
+    color: rgba(255, 255, 255, .8);
+}
+.abs#house { 
+    margin: 0 15px;
+    position: absolute;
+    left: 6%;
+    bottom: 6%;
+    
+    line-height: 1;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    font-stretch: condensed;
+    
+    color: rgba(255, 255, 255, .7);
+}

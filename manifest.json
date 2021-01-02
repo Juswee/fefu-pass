@@ -1,0 +1,25 @@
+{
+  "name": "FEFU-Pass",
+  "description": "Fuck the guard in full",
+  "version": "1.0.3",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "icon128.png",
+    "default_title" : "FEFU-Pass"
+  },
+  "permissions" : [
+      "storage"
+  ],
+  "content_scripts": [
+    {   
+      "js"      : [ 
+          "jquery.js",
+          "script.js" 
+      ],
+      "matches" : [
+        "https://univer.dvfu.ru/pass"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
