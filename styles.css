@@ -142,7 +142,10 @@
 #fefu-sett {
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 #fefu-sett span,
 #fefu-sett::before, 
@@ -174,12 +177,15 @@
 #fefu-sett.active span {
     background: transparent;
 }
-#fefu-sett.active::before {
-    transform: rotate(-45deg);
+#fefu-sett.active::before,
+#fefu-sett.active::after {
+    top: 50%;
+    left: 10px;
+    width: 12px;
+    transform: rotate(-45deg) translateY(-6px);
 }
 #fefu-sett.active::after {
-    transform: rotate(45deg);
-    top: 6px;
+    transform: rotate(45deg) translateY(6px);
 }
 
 #fefu-close {
@@ -219,7 +225,7 @@
     font-size: 13x;
     font-family: monospace;
     background: inherit;
-    transition: .3s;
+    transition: .3s ease;
     z-index: 10;
 }
 #fefu-menu.active {
