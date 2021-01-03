@@ -330,11 +330,11 @@
 }
 .delete {
     position: absolute;
-    right: 7px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
-    height: 14px;
-    width: 14px;
+    height: 17px;
+    width: 17px;
 }
 .delete::before, 
 .delete::after {
