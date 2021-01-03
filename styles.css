@@ -12,7 +12,6 @@
     height: auto;
     background: rgba(32,16,89, .6);
 }
-
 .spoiler-body {
     display: none;
     height: 230px;
@@ -329,6 +328,7 @@
     text-align: center;
 }
 .delete {
+    display: none;
     position: absolute;
     right: 0;
     top: 50%;
@@ -358,10 +358,10 @@
     background: red;
     opacity: 1;
 }
-.passlist-item.active .delete::before, 
-.passlist-item.active .delete::after {
-    background: red;
+.passlist-item.active .delete {
+    display: block;
 }
+
 .radio {
     position: absolute;
     left: 10px;
