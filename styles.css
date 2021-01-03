@@ -269,9 +269,11 @@
     margin: 0;
     margin-top: 3px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 230px;
+    overflow: hidden;
+}
+#passlist-inner {
+    position: relative;
+    height: auto;
     max-height: 230px;
     overflow-y: auto;
 }
