@@ -194,11 +194,28 @@
     transform: translateY(-50%);
     width: 30px;
     height: 30px;
+    cursor: pointer;
+}
+#fefu-close::before,
+#fefu-close::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 22px;
+    height: 2px;
     background: rgba(255, 255, 255, .7);
     transition: .3s ease;
     cursor: pointer;
 }
-#fefu-close:hover {
+#fefu-close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+#fefu-close:hover >
+#fefu-close::before,
+#fefu-close::after {
     background: red;
 }
 
