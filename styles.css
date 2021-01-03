@@ -350,7 +350,7 @@
     opacity: .7;
     transition: .3s ease-out;
 }
-.detele::after {
+.delete::after {
     transform: rotate(-45deg);   
 }
 .delete:hover::before, 
