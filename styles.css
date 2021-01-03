@@ -333,17 +333,17 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    height: 17px;
-    width: 17px;
+    height: 18px;
+    width: 18px;
 }
 .delete::before, 
 .delete::after {
     content: "";
     display: block;
     position: absolute;
-    right: 50%;
-    top: 50%;
-    transform: rotate(45deg) translate(-50%, -50%) ;
+    left: 4px;
+    top: 4px;
+    transform: rotate(45deg);
     height: 1px;
     width: 10px;
     background: #333;
@@ -351,7 +351,7 @@
     transition: .3s ease-out;
 }
 .detele::after {
-    transform: rotate(-45deg) translate(-50%, -50%) ;   
+    transform: rotate(-45deg);   
 }
 .delete:hover::before, 
 .delete:hover::after {
