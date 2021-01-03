@@ -119,7 +119,8 @@
     position: relative;
     height: 35px;
     width: 100%;
-    font: 25px cursive;
+    font-size: 25px;
+    font-family: cursive;
     text-align: center;
     color: aliceblue;
     background: #333;
