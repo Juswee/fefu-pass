@@ -142,7 +142,8 @@
 #fefu-sett {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -158,7 +159,7 @@
     width: 22px;
     height: 2px;
     background: rgba(255, 255, 255, .7);
-    transition: .6s;
+    transition: .3s ease;
 }
 #fefu-sett::before {
     transform: translateY(-6px);
@@ -166,13 +167,10 @@
 #fefu-sett::after {
     transform: translateY(6px);
 }
-#fefu-sett:hover > 
-#fefu-sett span +
-#fefu-sett::before +
-#fefu-sett::after {
-    background: rgba(32,16,89, .6);
+#fefu-sett:hover > {
+    background: rgba(32, 16, 89, .6);
     transform: rotate(-20deg);
-    transform: rotate(180deg);
+    transform: rotate(20deg);
 }
 #fefu-sett.active span {
     width: 0;
@@ -192,14 +190,16 @@
     margin: 0;
     position: absolute;
     right: 0;
-    top: -2px;
-    opacity: .7;
-    color: #fff;
-    transition: .3s;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, .7);
+    transition: .3s ease;
+    cursor: pointer;
 }
 #fefu-close:hover {
-    opacity: 1;
-    color: red;
+    background: red;
 }
 
 /* Content */
