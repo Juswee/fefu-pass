@@ -45,6 +45,13 @@
     transform: rotate(-45deg);
     left: 29px;
 }
+.spoiler-title:hover {
+    color: #f38181;
+}
+.spoiler-title:hover::before,
+.spoiler-title:hover::after {
+    background: #f38181;
+}
 .spoiler-title.active::before {
     transform: rotate(-45deg);
 }
