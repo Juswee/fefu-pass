@@ -167,10 +167,8 @@
 #fefu-sett::after {
     transform: translateY(6px);
 }
-#fefu-sett:hover > {
+#fefu-sett:hover > * {
     background: rgba(32, 16, 89, .6);
-    transform: rotate(-20deg);
-    transform: rotate(20deg);
 }
 #fefu-sett.active span {
     width: 0;
@@ -213,9 +211,7 @@
 #fefu-close::after {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-#fefu-close:hover >
-#fefu-close::before,
-#fefu-close::after {
+#fefu-close:hover > * {
     background: red;
 }
 
