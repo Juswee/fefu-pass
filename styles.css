@@ -239,7 +239,7 @@
     width: 100%;
     height: 100%;
     font-size: 13x;
-    font-family: monospace;
+    font-family: 'Open Sans', cursive;
     background: inherit;
     transition: .3s ease;
     z-index: 10;
@@ -334,7 +334,7 @@
 }
 
 #signature {
-    margin: 0;
+    padding-top: 1px;
     font: 13px monospace;
     color: #f38181;
     text-align: center;
