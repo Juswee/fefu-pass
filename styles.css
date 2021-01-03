@@ -237,8 +237,9 @@
     margin: 0 auto;
     position: relative;
     min-width: 65%;
-    color: #fff;   
+    color: rgba(255, 255, 255, .5);   
     text-align: center;
+    cursor: pointer;
 }
 .menu-item input {
     position: absolute;
