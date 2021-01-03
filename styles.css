@@ -266,6 +266,12 @@
     outline: none;
     overflow: hidden;
 }
+.input-crt.error {
+    border: 1px solid #e12336;
+}
+.input-crt.error:placeholder {
+    color: #e12336;
+}
 
 #save-btn {
     margin: 7px auto;
