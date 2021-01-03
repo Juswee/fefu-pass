@@ -269,7 +269,7 @@
 .input-crt.error {
     border: 1px solid #e12336;
 }
-.input-crt.error:placeholder {
+.input-crt.error::placeholder {
     color: #e12336;
 }
 
