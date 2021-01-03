@@ -318,27 +318,38 @@
     font-size: 16px;
     font-family: system-ui;
 }
-.passlist-item::before, 
-.passlist-item::after {
-    content: "";
-    display: block;
+.delete {
     position: absolute;
     right: 7px;
     top: 50%;
-    transform: rotate(45deg) translateY(-50%);
+    transform: translateY(-50%);
+    height: 14px;
+    width: 14px;
+}
+.delete::before, 
+.delete::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: rotate(45deg) translate(-50%, -50%) ;
     height: 1px;
     width: 10px;
     background: #333;
-    opacity: 0;
-    transition: .3s;
+    opacity: .7;
+    transition: .3s ease-out;
 }
-.passlist-item::after {
-    right: 11px;
-    transform: rotate(-45deg);   
+.detele::after {
+    transform: rotate(-45deg) translate(-50%, -50%) ;   
 }
-.passlist-item.active::before, 
-.passlist-item.active::after {
-    opacity: 0;
+.delete:hover::before, 
+.delete:hover::after {
+    background: red;
+    opacity: 1;
+}
+.passlist-item.active .delete::before, 
+.passlist-item.active .delete::after {
     background: red;
 }
 .radio {
