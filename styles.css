@@ -46,10 +46,6 @@
     transform: rotate(-45deg);
     left: 29px;
 }
-
-.spoiler-title.active {
-    margin: 0 0 20px 0;
-}
 .spoiler-title.active::before {
     transform: rotate(-45deg);
 }
