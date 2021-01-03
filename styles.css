@@ -269,13 +269,11 @@
     margin: 0;
     margin-top: 3px;
     position: relative;
-    overflow: hidden;
+    max-height: 230px;
+    overflow-y: auto;
 }
 #passlist-inner {
     position: relative;
-    height: auto;
-    max-height: 230px;
-    overflow-y: auto;
 }
 .passlist-item {
     margin: 5px auto;
