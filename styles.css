@@ -284,6 +284,11 @@
     background: #564BE1; 
     border: 1px groove #564BE1;
 }
+#save-btn:focus {
+    color: transparent;
+    background-image: linear-gradient(45deg, #564BE1, #30FFCC); 
+    border: 1px groove linear-gradient(-45deg, #564BE1, #30FFCC);
+}
 
 /* Passlist */
 #passlist {
