@@ -267,10 +267,10 @@
     overflow: hidden;
 }
 .input-crt.error {
-    border: 1px solid #e12336;
+    border: 1px solid #f15c68;
 }
 .input-crt.error::placeholder {
-    color: #e12336;
+    color: #f15c68;
 }
 
 #save-btn {
