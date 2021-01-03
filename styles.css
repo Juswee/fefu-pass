@@ -221,10 +221,9 @@
 }
 /* Menu */
 #fefu-menu {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    content-spacing: 5px;
     position: absolute;
     left: -100%;
     top: 0;
@@ -241,6 +240,7 @@
 }
 .menu-item {
     margin: 0 auto;
+    position: relative;
     min-width: 65%;
     color: #fff;   
     text-align: center;
@@ -264,6 +264,8 @@
     margin: 5px auto;
     padding: 6px 10px 2px 10px;
     width: 70%;
+    font-size: 13px;
+    font-family: 'Open Sans';
     border-radius: 3px;
     border: 1px solid #797387;
     outline: none;
@@ -271,7 +273,7 @@
 }
 
 #save-btn {
-    margin: 15px auto;
+    margin: 7px auto;
     height: 40px;
     font-size: 15px;
     background: #4169E1;
@@ -374,7 +376,7 @@
 }
 
 #signature {
-    padding-top: 1px;
+    margin: 0;
     font: 13px monospace;
     color: #f38181;
     text-align: center;
