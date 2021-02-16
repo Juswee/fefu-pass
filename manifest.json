@@ -1,7 +1,7 @@
 {
   "name": "FEFU-Pass",
-  "description": "Fuck the guard in full",
-  "version": "1.0.3",
+  "description": "Customize your account data! ",
+  "version": "2.0.2",
   "manifest_version": 2,
   "browser_action": {
     "default_icon": "icon128.png",

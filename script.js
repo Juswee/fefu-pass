@@ -1,13 +1,14 @@
-let pass_last, pass_img, pass_len, skip_lst = [];
+let pass_last = 0, pass_img, pass_len = 0, skip_lst = [];
 
 window.onload = async function() {
     await addHTML();
-    restorePass();
+    await restorePass();
     eventListener();
     fit();
 }
 
 function eventListener() {
+    console.log('FEFU-Pass');
     // Input remove error
     $(".input-crt").blur(function() {
         $(this).removeClass("error");
@@ -34,10 +35,10 @@ function eventListener() {
             let data = Array.from($(".input-crt")).map(item => item.value);
             if (skip_lst.length > 0) pass_last = skip_lst.pop();
             else pass_last = ++pass_len;
-            await createPass(pass_last, getHouseTitle(data));
+            createPass(pass_last, getHouseTitle(data));
             setStorage(pass_last, data);
             setStorage("len", pass_len);
-            setStorage("last_pass", pass_last);
+            setStorage("pass_last", pass_last);
             switchPass(pass_last);
             $(".input-crt").val("");
         }
@@ -51,7 +52,7 @@ function eventListener() {
 
 function fit() {
     let wid = $(".img-fluid:eq(3)").width() / 249;
-    $(".abs#name").css( { "font-size": parseInt(wid * 130) / 10 + "px", "bottom": wid * 81 + "px", "left": wid * 17 + "px" } );
+    $(".abs#name").css( { "font-size": parseInt(wid * 122) / 10 + "px", "bottom": wid * 82 + "px", "left": wid * 17 + "px" } );
     $(".abs#house").css( { "font-size": parseInt(wid * 849) / 100 + "px", "bottom": wid * 11 + "px", "left": wid * 17 + "px" } );
 }
 
@@ -89,14 +90,14 @@ async function restorePass() {
         // Load id of last used pass
         pass_img = $("#img-pass");
         pass_last = await getStorage("pass_last");
-        if (pass_last === "undefined") {
+        if (pass_last === "undefined" || pass_last === "NaN") {
             pass_last = 0;
             setStorage("pass_last", 0);
         } else if (pass_last > 0) switchPass(pass_last);
         // Load len of saved passes
         pass_len = await getStorage("len");
-        if (pass_len === "undefined") {
-            pass_last = 0;
+        if (pass_len === "undefined" || pass_len === "NaN") {
+            pass_len = 0;
             setStorage("len", 0);
         }
         // Create saved passes
@@ -172,7 +173,7 @@ function setStorage(key, value) {
     let obj = new Object();
     obj[key] = String(value);
     chrome.storage.local.set(obj, () => {
-        //console.log("Value of", key, "is set to", value);
+        console.log("Value of", key, "is set to", value);
     });
 }
 
@@ -180,7 +181,7 @@ async function getStorage(key) {
     key = String(key);
     return new Promise( (resolve) => {
         chrome.storage.local.get([key], result => {
-            //console.log( "Value of", key, "currently is", String(result[key]) );
+            console.log( "Value of", key, "currently is", String(result[key]) );
             resolve( String(result[key]) );
         });
     });
