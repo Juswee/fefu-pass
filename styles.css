@@ -81,15 +81,14 @@
     line-height: 1;
     text-align: left;
     font-family: 'Araboto', sans-serif;
-    font-stretch: condensed;
-    filter: blur(.4px);
     color: rgba(255, 255, 255, .9);
 }
 .abs#name {
-    line-height: 1.1;
-    letter-spacing: -.5px;
+    line-height: 1.2;
+    font-size: 12.2px;
 }
 .abs#house { 
+    font-size: 12px;
     letter-spacing: 0px;
     color: rgba(255, 255, 255, .8);
 }
