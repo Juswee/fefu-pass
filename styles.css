@@ -1,3 +1,10 @@
+/* Font */
+@font-face {
+    font-family: "Araboto"; 
+    src: url("https://raw.githubusercontent.com/Juswee/fefu-pass/main/Araboto Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
 /* General */
 .flexbox {
     display: flex;
